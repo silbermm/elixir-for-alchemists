@@ -5,7 +5,6 @@ defmodule ElixirForAlchemists do
 
   require IEx;
 
-
   @doc """
   Product of a list of numbers
 

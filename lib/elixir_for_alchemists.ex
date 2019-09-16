@@ -17,7 +17,7 @@ defmodule ElixirForAlchemists do
   """
   @spec product_of_numbers(list(number())) :: number()
   def product_of_numbers(list_of_numbers) do
-    Enum.reduce(list_of_numbers, &Kernel.*/2)
+    Enum.reduce(list_of_numbers, &Kernel.+/2)
   end
 
   def map_reduce(list_of_maps) do

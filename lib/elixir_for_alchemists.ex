@@ -29,5 +29,6 @@ defmodule ElixirForAlchemists do
   def use_fn do
     product_of_numbers([1, 2, "3"])
   end
+
 end
 

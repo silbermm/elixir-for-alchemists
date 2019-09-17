@@ -19,12 +19,6 @@ defmodule ElixirForAlchemists do
     Enum.reduce(list_of_numbers, &Kernel.+/2)
   end
 
-  def map_reduce(list_of_maps) do
-    list_of_maps
-    |> Enum.map(fn %{age: age} -> age end)
-    |> Enum.reduce(&Kernel.+/2)
-  end
-
   @spec use_fn() :: number()
   def use_fn do
     product_of_numbers([1, 2, "3"])

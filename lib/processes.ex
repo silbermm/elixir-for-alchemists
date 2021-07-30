@@ -9,8 +9,8 @@ defmodule Processes do
   def hello do
     receive do
       {:ok, "hello", send_to} ->
-        IO.inspect("IN HELLO PROCESS")
-        send(send_to, "Alchemy")
+        IO.inspect("HELLO ", label: Node.self())
+        send(send_to, "P&G")
     end
   end
 
@@ -19,7 +19,7 @@ defmodule Processes do
   """
   def message do
     receive do
-      msg -> IO.inspect(msg, label: "FROM MESSAGE PROCESS")
+      msg -> IO.inspect(msg, label: Node.self())
     end
   end
 
